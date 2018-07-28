@@ -1,0 +1,142 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-input type="text" placeholder="first name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="last name"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="text" placeholder="e-mail"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="password" placeholder="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="confirm password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>gender</ion-label>
+    <ion-select [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>birth date</ion-label>
+      <ion-select [(ngModel)]="months">
+        <ion-option value="January">January</ion-option>
+        <ion-option value="February">February</ion-option>
+        <ion-option value="March">March</ion-option>
+        <ion-option value="April">April</ion-option>
+        <ion-option value="May">May</ion-option>
+        <ion-option value="June">June</ion-option>
+        <ion-option value="July">July</ion-option>
+        <ion-option value="August">August</ion-option>
+        <ion-option value="September">September</ion-option>
+        <ion-option value="October">October</ion-option>
+        <ion-option value="November">November</ion-option>
+        <ion-option value="December">December</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="year">
+          <ion-option value="1968">1968</ion-option>
+          <ion-option value="1969">1969</ion-option>
+          <ion-option value="1970">1970</ion-option>
+          <ion-option value="1971">1971</ion-option>
+          <ion-option value="1972">1972</ion-option>
+          <ion-option value="1973">1973</ion-option>
+          <ion-option value="1974">1974</ion-option>
+          <ion-option value="1975">1975</ion-option>
+          <ion-option value="1976">1976</ion-option>
+          <ion-option value="1977">1977</ion-option>
+          <ion-option value="1978">1978</ion-option>
+          <ion-option value="1979">1979</ion-option>
+          <ion-option value="1980">1980</ion-option>
+          <ion-option value="1981">1981</ion-option>
+          <ion-option value="1982">1982</ion-option>
+          <ion-option value="1983">1983</ion-option>
+          <ion-option value="1984">1984</ion-option>
+          <ion-option value="1985">1985</ion-option>
+          <ion-option value="1986">1986</ion-option>
+          <ion-option value="1987">1987</ion-option>
+          <ion-option value="1988">1988</ion-option>
+          <ion-option value="1989">1989</ion-option>
+          <ion-option value="1990">1990</ion-option>
+          <ion-option value="1991">1991</ion-option>
+          <ion-option value="1992">1992</ion-option>
+          <ion-option value="1993">1993</ion-option>
+          <ion-option value="1994">1994</ion-option>
+          <ion-option value="1995">1995</ion-option>
+          <ion-option value="1996">1996</ion-option>
+          <ion-option value="1997">1997</ion-option>
+          <ion-option value="1998">1998</ion-option>
+          <ion-option value="1999">1999</ion-option>
+          <ion-option value="2000">2000</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>state</ion-label>
+        <ion-select name="state" [(ngModel)]="state">
+          <ion-option value="m">Aguascalientes</ion-option>
+          <ion-option value="f">Baja California</ion-option>
+          <ion-option value="m">Baja California Sur</ion-option>
+          <ion-option value="f">Campeche</ion-option>
+          <ion-option value="m">Chiapas</ion-option>
+          <ion-option value="f">Chihuahua</ion-option>
+          <ion-option value="m">Ciudad de México</ion-option>
+          <ion-option value="f">Coahuila</ion-option>
+          <ion-option value="m">Colima</ion-option>
+          <ion-option value="f">Durango</ion-option>
+          <ion-option value="f">Guanajuato</ion-option>
+          <ion-option value="f">Guerrero</ion-option>
+          <ion-option value="f">Hidalgo</ion-option>
+          <ion-option value="f">Jalisco</ion-option>
+          <ion-option value="f">Michoacán</ion-option>
+          <ion-option value="f">Morelos</ion-option>
+          <ion-option value="f">Nayarit</ion-option>
+          <ion-option value="f">Nuevo León</ion-option>
+          <ion-option value="f">Oaxaca</ion-option>
+          <ion-option value="f">Puebla</ion-option>
+          <ion-option value="f">Querétaro</ion-option>
+          <ion-option value="f">Quintana Roo</ion-option>
+          <ion-option value="f">San Luis Potosí</ion-option>
+          <ion-option value="f">Sinaloa</ion-option>
+          <ion-option value="f">Sonora</ion-option>
+          <ion-option value="f">Tabasco</ion-option>
+          <ion-option value="f">Tamaulipas</ion-option>
+          <ion-option value="f">Tlaxcala</ion-option>
+          <ion-option value="f">Veracruz</ion-option>
+          <ion-option value="f">Yucatán</ion-option>
+          <ion-option value="f">Zacatecas</ion-option>
+        </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+
+<button ion-button color="bitelink" (click)="create()" round class="center">
+Create Account
+</button>
+
+</ion-content>
