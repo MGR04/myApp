@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { LoginPage } from '../login/login';
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
