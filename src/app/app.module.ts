@@ -9,9 +9,11 @@ import { LoginPage } from '../pages/login/login';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
+import { MapPage } from '../pages/map/map';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     DashboardPage,
     MessagesPage,
-    ProfilePage
+    ProfilePage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -35,11 +38,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     DashboardPage,
     MessagesPage,
-    ProfilePage
+    ProfilePage,
+    MapPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

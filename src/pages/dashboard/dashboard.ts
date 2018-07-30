@@ -8,6 +8,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+declare var google;
+
 @IonicPage()
 @Component({
   selector: 'page-dashboard',
@@ -16,10 +18,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DashboardPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DashboardPage');
+
   }
 
 }
