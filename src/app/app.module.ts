@@ -26,7 +26,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     MessagesPage,
     ProfilePage,
     MapPage,
-    NewpostPage,
+    NewpostPage
     SlidesPage
   ],
   imports: [
@@ -43,8 +43,11 @@ import { Geolocation } from '@ionic-native/geolocation';
     MessagesPage,
     ProfilePage,
     MapPage,
-    NewpostPage,
+<<<<<<< HEAD
+    NewpostPage
+=======
     SlidesPage
+>>>>>>> 5692c93692487ba8c21ac45de2866f30ed7ca396
   ],
   providers: [
     StatusBar,
