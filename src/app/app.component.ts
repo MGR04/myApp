@@ -19,7 +19,7 @@ import { SlidesPage } from '../pages/slides/slides';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SlidesPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,7 +28,6 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Slides', component: SlidesPage},
       { title: 'Home', component: HomePage },
       { title: 'Register', component: RegisterPage},
       { title: 'Login', component: LoginPage},
@@ -37,6 +36,7 @@ export class MyApp {
       { title: 'Profile', component: ProfilePage},
       { title: 'Map', component: MapPage},
       { title: 'Map', component: NewpostPage}
+      { title: 'Slides', component: SlidesPage}
     ];
 
   }
