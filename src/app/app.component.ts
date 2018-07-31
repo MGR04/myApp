@@ -19,7 +19,7 @@ import { SlidesPage } from '../pages/slides/slides';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = SlidesPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -35,7 +35,7 @@ export class MyApp {
       { title: 'Messages', component: MessagesPage},
       { title: 'Profile', component: ProfilePage},
       { title: 'Map', component: MapPage},
-      { title: 'Map', component: NewpostPage}
+      { title: 'Map', component: NewpostPage},
       { title: 'Slides', component: SlidesPage}
     ];
 

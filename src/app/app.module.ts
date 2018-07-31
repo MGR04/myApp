@@ -12,6 +12,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
 import { SlidesPage } from '../pages/slides/slides';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Geolocation } from '@ionic-native/geolocation';
@@ -26,7 +27,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     MessagesPage,
     ProfilePage,
     MapPage,
-    NewpostPage
+    NewpostPage,
     SlidesPage
   ],
   imports: [
@@ -43,11 +44,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     MessagesPage,
     ProfilePage,
     MapPage,
-<<<<<<< HEAD
-    NewpostPage
-=======
+    NewpostPage,
     SlidesPage
->>>>>>> 5692c93692487ba8c21ac45de2866f30ed7ca396
   ],
   providers: [
     StatusBar,
