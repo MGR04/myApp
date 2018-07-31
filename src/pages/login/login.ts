@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MessagesPage } from '../messages/messages';
 import { ProfilePage } from '../profile/profile';
-
+import { NewpostPage } from '../newpost/newpost';
 /**
  * Generated class for the LoginPage page.
  *
@@ -17,9 +17,10 @@ import { ProfilePage } from '../profile/profile';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
+constructor(public navCtrl: NavController, public navParams: NavParams) {
+ }
+  
+  
 
   messages(){
   	this.navCtrl.push(MessagesPage)
@@ -29,4 +30,7 @@ export class LoginPage {
   	this.navCtrl.push(ProfilePage)
   }
 
+  newpost(){
+    this.navCtrl.push(NewpostPage)
+  }
 }

@@ -10,6 +10,7 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
+import { NewpostPage } from '../pages/newpost/newpost';
 
 @Component({
   templateUrl: 'app.html'
@@ -32,7 +33,8 @@ export class MyApp {
       { title: 'Dashboard', component: DashboardPage},
       { title: 'Messages', component: MessagesPage},
       { title: 'Profile', component: ProfilePage},
-      { title: 'Map', component: MapPage}
+      { title: 'Map', component: MapPage},
+      { title: 'Map', component: NewpostPage}
     ];
 
   }
