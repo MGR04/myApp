@@ -19,14 +19,14 @@ import { Geolocation } from '@ionic-native/geolocation';
 @NgModule({
   declarations: [
     MyApp,
+    SlidesPage,
     HomePage,
     RegisterPage,
     LoginPage,
     DashboardPage,
     MessagesPage,
     ProfilePage,
-    MapPage,
-    SlidesPage
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -35,14 +35,14 @@ import { Geolocation } from '@ionic-native/geolocation';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    SlidesPage,
     HomePage,
     RegisterPage,
     LoginPage,
     DashboardPage,
     MessagesPage,
     ProfilePage,
-    MapPage,
-    SlidesPage
+    MapPage
   ],
   providers: [
     StatusBar,
