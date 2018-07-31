@@ -18,7 +18,7 @@ import { NewpostPage } from '../pages/newpost/newpost';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = SlidesPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -27,15 +27,20 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Slides', component: SlidesPage},
       { title: 'Home', component: HomePage },
       { title: 'Register', component: RegisterPage},
       { title: 'Login', component: LoginPage},
       { title: 'Dashboard', component: DashboardPage},
       { title: 'Messages', component: MessagesPage},
       { title: 'Profile', component: ProfilePage},
+<<<<<<< HEAD
       { title: 'Map', component: MapPage},
       { title: 'Map', component: NewpostPage},
       { title: 'Slides', component: SlidesPage}
+=======
+      { title: 'Map', component: MapPage}
+>>>>>>> parent of 5692c93... Revert "sliders"
     ];
 
   }
