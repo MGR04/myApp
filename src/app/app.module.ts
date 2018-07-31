@@ -46,6 +46,9 @@ import { Geolocation } from '@ionic-native/geolocation';
     MapPage,
     NewpostPage,
     SlidesPage
+
+  
+
   ],
   providers: [
     StatusBar,
