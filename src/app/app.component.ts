@@ -35,7 +35,7 @@ export class MyApp {
       { title: 'Messages', component: MessagesPage},
       { title: 'Profile', component: ProfilePage},
       { title: 'Map', component: MapPage},
-      { title: 'Map', component: NewpostPage}
+      { title: 'Map', component: NewpostPage},
       { title: 'Slides', component: SlidesPage}
     ];
 
