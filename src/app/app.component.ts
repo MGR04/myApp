@@ -11,7 +11,6 @@ import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
-import { SlidesPage } from '../pages/slides/slides';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +18,7 @@ import { SlidesPage } from '../pages/slides/slides';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SlidesPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 

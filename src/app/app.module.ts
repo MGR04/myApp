@@ -11,7 +11,10 @@ import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
+<<<<<<< HEAD
 import { SlidesPage } from '../pages/slides/slides';
+=======
+>>>>>>> parent of e33c99a... ggg
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
