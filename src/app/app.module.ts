@@ -27,6 +27,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     ProfilePage,
     MapPage,
     NewpostPage
+<<<<<<< HEAD
+=======
+    SlidesPage
+>>>>>>> parent of 1b6adb0... ggg
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,15 @@ import { Geolocation } from '@ionic-native/geolocation';
     MessagesPage,
     ProfilePage,
     MapPage,
+<<<<<<< HEAD
     NewpostPage
+=======
+<<<<<<< HEAD
+    NewpostPage
+=======
+    SlidesPage
+>>>>>>> 5692c93692487ba8c21ac45de2866f30ed7ca396
+>>>>>>> parent of 1b6adb0... ggg
   ],
   providers: [
     StatusBar,

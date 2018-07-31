@@ -35,6 +35,10 @@ export class MyApp {
       { title: 'Profile', component: ProfilePage},
       { title: 'Map', component: MapPage},
       { title: 'Map', component: NewpostPage}
+<<<<<<< HEAD
+=======
+      { title: 'Slides', component: SlidesPage}
+>>>>>>> parent of 1b6adb0... ggg
     ];
 
   }
