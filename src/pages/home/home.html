@@ -1,28 +1,44 @@
 
-<ion-content padding>
+<ion-content class="background-color">
   <br>
   <br>
   <img src="assets/imgs/Picture1.png" class="center"/>
-  <br>
-  <!-- alooooó? -->
   
+  
+  <!-- <ion-list>
+  <ion-item color="otro">
+      <ion-icon name="at" item-start></ion-icon>
+    <ion-input type="email" class="texto" placeholder="E-mail"></ion-input>
+  </ion-item> -->
   <ion-list>
+  <ion-item color="verde">      
+      <ion-icon name="at" item-start></ion-icon>
+      <ion-label floating color="blanco" class="texto">
+        Email
+      </ion-label>
+      <ion-input type="email" name="email" required></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-input type="email" placeholder="e-mail"></ion-input>
-  </ion-item>
+  <br>
   
-  <ion-item>
+  <ion-item color="verde"> 
     <!-- <ion-input type="password" placeholder="password" </ion-input>[(ngModel)]="passCode"></ion-input> -->
-    <ion-input type="password" placeholder="password"></ion-input>
+    <ion-icon name="lock" item-start></ion-icon>
+    <ion-label floating color="blanco" class="texto">
+      Password
+    </ion-label>
+    <ion-input type="password" name="password" required></ion-input>
   </ion-item>
 
 </ion-list>
+<br>
+<br>
 <!-- <button ion-button color="light" (click)="login()" round class="center2"[disabled]="passCode.length <  8" >Login -->
-<button ion-button color="bitelink" (click)="login()" round class="center2">Login</button>
-<ion-label type="text" class="center3"><hr> or </ion-label>
+<button ion-button color="bitelink" (click)="login()" full class="center2">LOG IN</button>
 
-<button ion-button color="bitelink" (click)="register()" round class="center2">
-Register Now
+<!-- <ion-label type="text" class="center3"><hr> or </ion-label> -->
+
+<!-- <button ion-button color="link" (click)="register()" round class="center2">
+Sign Up
 </button>
-</ion-content>
+</ion-content> -->
