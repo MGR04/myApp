@@ -11,7 +11,7 @@ import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
-import { SlidesPage } from '../pages/slides/slides'
+import { SlidesPage } from '../pages/slides/slides';
 
 @Component({
   templateUrl: 'app.html'
