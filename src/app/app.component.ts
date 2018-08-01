@@ -11,6 +11,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
 import { SlidesPage } from '../pages/slides/slides';
+import { NotificationsPage } from '../pages/notifications/notifications';
 
 @Component({
   templateUrl: 'app.html'
@@ -33,7 +34,9 @@ export class MyApp {
       { title: 'Messages', component: MessagesPage},
       { title: 'Profile', component: ProfilePage},
       { title: 'Map', component: MapPage},
-      { title: 'Slides', component: SlidesPage}
+      { title: 'Slides', component: SlidesPage},
+      { title: 'Newpost', component: NewpostPage},
+      { title: 'Notifications', component: NotificationsPage}
     ];
 
   }

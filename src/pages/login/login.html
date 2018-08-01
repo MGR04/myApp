@@ -14,8 +14,8 @@
         </ion-buttons>
      
         <ion-buttons end>
-            <button ion-button icon-only>
-              <ion-icon name="restaurant"></ion-icon>
+            <button ion-button icon-only (click)="notifications()">
+              <ion-icon name="restaurant"><ion-badge id="notifications-badge" color="danger" class="not">1</ion-badge></ion-icon>
             </button>
         </ion-buttons> 
       </ion-navbar> 
@@ -42,7 +42,7 @@
       </ion-item>
     </ion-list> -->
 
-    <ion-card class="width"> 
+     <ion-card class="width"> 
         <ion-item>
           <ion-avatar item-start>
             <img src="assets/imgs/main_user.png">
@@ -136,7 +136,7 @@
         
         <ion-row>
           <ion-col>
-            <button ion-button small color="link" class="paddd">Join now</button>
+            <button ion-button small color="link" class="paddd">link now</button>
           </ion-col>
         </ion-row>
       
@@ -191,7 +191,7 @@
     
     <ion-row>
       <ion-col>
-        <button ion-button small color="link" class="paddd">Join now</button>
+        <button ion-button small color="link" class="paddd">link now</button>
       </ion-col>
     </ion-row>
   
@@ -270,7 +270,8 @@
     
     <ion-row>
       <ion-col>
-        <button ion-button small color="link" class="paddd">Join now</button>
+        <!-- <button ion-button small color="link" class="paddd">link now</button> -->
+        <button ion-button small color="danger" class="paddd">Cancel</button>
       </ion-col>
     </ion-row>
   
@@ -286,7 +287,7 @@
           <ion-icon name="home"></ion-icon>
         </ion-segment-button>
         <ion-segment-button value="chatboxes" (click)="messages()">
-          <ion-icon name="chatboxes"></ion-icon>
+          <ion-icon name="chatboxes"><ion-badge id="notifications-badge" color="danger" class="not">2</ion-badge></ion-icon>
         </ion-segment-button>
         <ion-segment-button value="contact" (click)="profile()">
           <ion-icon name="contact"></ion-icon>

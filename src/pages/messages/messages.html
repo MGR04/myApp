@@ -13,8 +13,8 @@
         </ion-buttons>
      
         <ion-buttons end>
-            <button ion-button icon-only>
-              <ion-icon name="restaurant"></ion-icon>
+            <button ion-button icon-only (click)="notifications()">
+              <ion-icon name="restaurant"><ion-badge id="notifications-badge" color="danger" class="not">1</ion-badge></ion-icon>
             </button>
         </ion-buttons> 
       </ion-navbar> 
@@ -44,75 +44,53 @@
       
     <ion-content>
       <ion-list>
-        <ion-list-header>
-          Recent conversations
-        </ion-list-header>
+          <ion-item class="texto">
+              <strong>Recent Conversations</strong>
+            </ion-item>
+        
       
-    <ion-item>
+    <ion-item class="fondo">
       <ion-avatar item-start>
-        <img src="assets/imgs/con1.png">
+        <img src="assets/imgs/user1.png">
       </ion-avatar>
-      <h2>Sofia</h2><h3>20/07/2018</h3>
-      <p>Okey</p>
+      <button ion-button clear small color="dark" class="padd"><strong>Sandra Pérez (1)</strong></button>
+      <font size="2" color="#4C4C4B" class="right">12:24 p.m.</font>
+      <br>
+      <font size="2"><em>Sandra and you are now linked, start a conversation</em></font>
+    </ion-item>
+    
+
+    <ion-item >
+        <ion-avatar item-start>
+            <img src="assets/imgs/dos.PNG">
+          </ion-avatar>
+          <button ion-button clear small color="dark" class="padd"><strong>Saul González, Rosalinda Fl...</strong></button>
+          <font size="2" color="#4C4C4B" class="right2">Sun</font>
+          <br>
+          <font size="2">I'm here! Where are you guys?</font>
     </ion-item>
 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con2.jpeg">
-      </ion-avatar>
-      <h2>Erick</h2><h3>1/07/2018</h3>
-      <p>Thanks!</p>
+
+    <ion-item >
+        <ion-avatar item-start>
+            <img src="assets/imgs/tres.PNG">
+          </ion-avatar>
+          <button ion-button clear small color="dark" class="padd"><strong>Carlos Peraza, Tannya Estra...</strong></button>
+          <font size="2" color="#4C4C4B" class="right3">July 25</font>
+          <br>
+          <font size="2">We are the table 4!</font>
     </ion-item>
 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con3.jpg">
-      </ion-avatar>
-      <h2>Stephania</h2><h3>25/06/2018</h3>
-      <p>Yup, thats it</p>
+    <ion-item class="fondo">
+        <ion-avatar item-start>
+            <img src="assets/imgs/Picture4.png">
+          </ion-avatar>
+          <button ion-button clear small color="dark" class="padd"><strong>David Márquez (4)</strong></button>
+          <font size="2" color="#4C4C4B" class="right4">July 15</font>
+          <br>
+          <font size="2">It was great meeting you!</font>
     </ion-item>
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con4.jpeg">
-      </ion-avatar>
-      <h2>Javier</h2><h3>20/6/2018</h3>
-      <p>No</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con5.jpg">
-      </ion-avatar>
-      <h2>Francisco</h2><h3>19/06/2018</h3>
-      <p>I'm the table number 4</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con6.jpg">
-      </ion-avatar>
-      <h2>Marissa</h2><h3>15/06/2018</h3>
-      <p>Yes, I think thats good</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con7.jpeg">
-      </ion-avatar>
-      <h2>Blanca</h2><h3>12/06/2018</h3>
-      <p>Tell me when you want to go back...</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/con8.jpeg">
-      </ion-avatar>
-      <h2>Luis</h2><h3>07/06/2018</h3>
-      <p>It's a little bit weird</p>
-    </ion-item>
-  </ion-list>
-
+</ion-list>
 </ion-content>
 
 <ion-footer>
@@ -122,11 +100,13 @@
           <ion-icon name="home"></ion-icon>
         </ion-segment-button>
         <ion-segment-button value="chatboxes">
-          <ion-icon name="chatboxes"></ion-icon>
+          <ion-icon name="chatboxes"><ion-badge id="notifications-badge" color="danger" class="not">2</ion-badge></ion-icon>
         </ion-segment-button>
         <ion-segment-button value="contact" (click)="profile()">
           <ion-icon name="contact"></ion-icon>
         </ion-segment-button>
       </ion-segment>
     </ion-toolbar>
-  </ion-footer>
+  </ion-footer>  
+
+  

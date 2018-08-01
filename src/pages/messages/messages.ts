@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { ProfilePage } from '../profile/profile';
+import { NotificationsPage } from '../notifications/notifications';
+
+
+
+
 /**
  * Generated class for the MessagesPage page.
  *
@@ -25,6 +30,10 @@ export class MessagesPage {
 
   profile(){
   	this.navCtrl.push(ProfilePage)
+  }
+
+  notifications(){
+    this.navCtrl.push(NotificationsPage)
   }
 
 }
