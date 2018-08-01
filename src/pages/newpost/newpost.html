@@ -14,16 +14,16 @@
 
 
 <ion-content padding>
-  <ion-item>
-      <ion-avatar item-start>
-        <img src="assets/imgs/user2.png">
-      </ion-avatar>
+  <!-- <ion-item>
       
-  </ion-item>
+        <img src="assets/imgs/main_user.png">
+      
+      
+  </ion-item> -->
   
   <ion-item>      
       <ion-icon name="create" item-start></ion-icon>
-      <ion-label floating  class="texto">
+      <ion-label floating small>
         Add a message...
       </ion-label>
       <ion-input type="text" name="message" required></ion-input>
@@ -31,7 +31,7 @@
     
     <ion-item>      
         <ion-icon name="pin" color="danger" item-start></ion-icon>
-        <ion-label floating class="texto">
+        <ion-label floating>
           Add a location
         </ion-label>
         <ion-input type="" name="email" required></ion-input>
@@ -42,6 +42,53 @@
         <ion-label>Date</ion-label>
         <ion-datetime displayFormat="MMMM D, YYYY" [(ngModel)]="myDate"></ion-datetime>
       </ion-item>
+
+      <ion-item>
+          <ion-icon name="time" item-start></ion-icon>
+          <ion-label>Time</ion-label>
+          <ion-datetime displayFormat="h:mm a" [(ngModel)]="myTime"></ion-datetime>
+        </ion-item>
     
-    <p></p>
+        <ion-item>
+            <ion-icon name="body" item-start></ion-icon>
+            <ion-label>Guests</ion-label>
+            <ion-select [(ngModel)]="number">
+              <ion-option value="one">1</ion-option>
+              <ion-option value="two">2</ion-option>
+              <ion-option value="three">3</ion-option>
+              <ion-option value="four">4</ion-option>
+              <ion-option value="five">5</ion-option>
+              <ion-option value="six">6</ion-option>
+              <ion-option value="seven">7</ion-option>
+              <ion-option value="eight">8</ion-option>
+              <ion-option value="nine">9</ion-option>
+              <ion-option value="ten">10</ion-option>
+              <ion-option value="undifined">+</ion-option>
+              </ion-select>
+              </ion-item>
+        
+              <ion-list radio-group>
+                <ion-list-header>
+                  Privacy
+                </ion-list-header>
+              
+                <ion-item>
+                  <ion-icon name="git-commit" item-start></ion-icon>
+                  <ion-label>Only my university</ion-label>
+                  <ion-radio color="bite" value="go"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-icon name="git-network" item-start></ion-icon>
+                  <ion-label>Universities of my city</ion-label>
+                  <ion-radio  color="bite" value="gooo"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-icon name="ionic" item-start></ion-icon>
+                  <ion-label>Universities of my state</ion-label>
+                  <ion-radio  color="bite" value="goo"></ion-radio>
+                </ion-item>
+              </ion-list>
+              
 </ion-content>
