@@ -2,7 +2,7 @@ page-login {
 
     .right {
         position: relative;
-        right: -88px;
+        right: -81px;
     }
     .right2 {
         position: relative;
@@ -30,8 +30,10 @@ page-login {
     }
     .padd {
         padding-top: 17px; 
-        padding-bottom: 0px;
+        padding-bottom: -10px;
         padding-left: 0px;
+        text-transform: capitalize;
+        font-size: 15px;
     }
 
     .paddd {
