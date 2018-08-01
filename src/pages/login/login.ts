@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MessagesPage } from '../messages/messages';
 import { ProfilePage } from '../profile/profile';
 import { NewpostPage } from '../newpost/newpost';
+import { NotificationsPage } from '../notifications/notifications';
 /**
  * Generated class for the LoginPage page.
  *
@@ -32,5 +33,9 @@ constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   newpost(){
     this.navCtrl.push(NewpostPage)
+  }
+
+  notifications(){
+    this.navCtrl.push(NotificationsPage)
   }
 }
