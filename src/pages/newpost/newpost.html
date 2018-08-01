@@ -20,10 +20,11 @@
       
       
   </ion-item> -->
-  
+
+
   <ion-item>      
       <ion-icon name="create" item-start></ion-icon>
-      <ion-label floating small>
+      <ion-label floating >
         Add a message...
       </ion-label>
       <ion-input type="text" name="message" required></ion-input>
@@ -66,13 +67,13 @@
               <ion-option value="undifined">+</ion-option>
               </ion-select>
               </ion-item>
-        
+        <br>
               <ion-list radio-group>
-                <ion-list-header>
-                  Privacy
-                </ion-list-header>
+                <ion-item class="texto">
+                  <strong>Privacy</strong>
+                </ion-item>
               
-                <ion-item>
+                <ion-item class="pad">
                   <ion-icon name="git-commit" item-start></ion-icon>
                   <ion-label>Only my university</ion-label>
                   <ion-radio color="bite" value="go"></ion-radio>
