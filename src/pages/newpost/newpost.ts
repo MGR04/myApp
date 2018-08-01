@@ -14,12 +14,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'newpost.html',
 })
 export class NewpostPage {
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NewpostPage');
-  }
+
 
 }

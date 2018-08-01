@@ -4,6 +4,10 @@ import { MessagesPage } from '../messages/messages';
 import { ProfilePage } from '../profile/profile';
 import { NewpostPage } from '../newpost/newpost';
 import { NotificationsPage } from '../notifications/notifications';
+import { AlertController } from 'ionic-angular';
+export class MyPage {
+  
+}
 /**
  * Generated class for the LoginPage page.
  *
@@ -18,7 +22,7 @@ import { NotificationsPage } from '../notifications/notifications';
 })
 export class LoginPage {
 
-constructor(public navCtrl: NavController, public navParams: NavParams) {
+constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
  }
   
   
@@ -38,4 +42,16 @@ constructor(public navCtrl: NavController, public navParams: NavParams) {
   notifications(){
     this.navCtrl.push(NotificationsPage)
   }
+
+  // alerta() {
+  //   const alert = this.alertCtrl.create({
+  //     title: 'New Friend!',
+  //     subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+  //     buttons: ['OK']
+  //   });
+  //   alert.present();
+  // }
+  
+  
+
 }
