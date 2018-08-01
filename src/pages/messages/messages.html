@@ -19,7 +19,15 @@
 <ion-content>
     
 
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+   <!-- <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>-->
+    <ion-searchbar 
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionInput)="getItems($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+
     <ion-list>
       <ion-item *ngFor="let item of items">
         {{ item }}
@@ -29,7 +37,7 @@
     <ion-content>
       <ion-list>
         <ion-list-header>
-          Conversaciones recientes
+          Recent conversations
         </ion-list-header>
       
     <ion-item>
@@ -45,7 +53,7 @@
         <img src="assets/imgs/con2.jpeg">
       </ion-avatar>
       <h2>Erick</h2><h3>1/07/2018</h3>
-      <p>Gracias!</p>
+      <p>Thanks!</p>
     </ion-item>
 
     <ion-item>
@@ -53,7 +61,7 @@
         <img src="assets/imgs/con3.jpg">
       </ion-avatar>
       <h2>Stephania</h2><h3>25/06/2018</h3>
-      <p>Sip, es ahí</p>
+      <p>Yup, thats it</p>
     </ion-item>
 
     <ion-item>
@@ -69,7 +77,7 @@
         <img src="assets/imgs/con5.jpg">
       </ion-avatar>
       <h2>Francisco</h2><h3>19/06/2018</h3>
-      <p>Estoy en la mesa de la izquierda</p>
+      <p>I'm the table number 4</p>
     </ion-item>
 
     <ion-item>
@@ -77,7 +85,7 @@
         <img src="assets/imgs/con6.jpg">
       </ion-avatar>
       <h2>Marissa</h2><h3>15/06/2018</h3>
-      <p>Si, me parece correcto</p>
+      <p>Yes, I think thats good</p>
     </ion-item>
 
     <ion-item>
@@ -85,7 +93,7 @@
         <img src="assets/imgs/con7.jpeg">
       </ion-avatar>
       <h2>Blanca</h2><h3>12/06/2018</h3>
-      <p>Me avisas cuando quieras volver...</p>
+      <p>TTell me when you want to go back...</p>
     </ion-item>
 
     <ion-item>
@@ -93,7 +101,7 @@
         <img src="assets/imgs/con8.jpeg">
       </ion-avatar>
       <h2>Luis</h2><h3>07/06/2018</h3>
-      <p>Es un poco extraño</p>
+      <p>It's a little bit weird</p>
     </ion-item>
   </ion-list>
 
