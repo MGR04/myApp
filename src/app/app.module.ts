@@ -6,7 +6,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
-import { DashboardPage } from '../pages/dashboard/dashboard';
 import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
@@ -23,7 +22,6 @@ import { Geolocation } from '@ionic-native/geolocation';
     HomePage,
     RegisterPage,
     LoginPage,
-    DashboardPage,
     MessagesPage,
     ProfilePage,
     MapPage,
@@ -40,7 +38,6 @@ import { Geolocation } from '@ionic-native/geolocation';
     HomePage,
     RegisterPage,
     LoginPage,
-    DashboardPage,
     MessagesPage,
     ProfilePage,
     MapPage,

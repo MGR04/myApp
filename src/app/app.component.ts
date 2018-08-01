@@ -6,12 +6,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
-import { DashboardPage } from '../pages/dashboard/dashboard';
 import { MessagesPage } from '../pages/messages/messages';
 import { ProfilePage } from '../pages/profile/profile';
 import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
-import { SlidesPage } from '../pages/slides/slides'
+import { SlidesPage } from '../pages/slides/slides';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,11 +30,10 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Register', component: RegisterPage},
       { title: 'Login', component: LoginPage},
-      { title: 'Dashboard', component: DashboardPage},
       { title: 'Messages', component: MessagesPage},
       { title: 'Profile', component: ProfilePage},
       { title: 'Map', component: MapPage},
-      { title: 'Map', component: NewpostPage}
+      { title: 'Slides', component: SlidesPage}
     ];
 
   }
