@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Login3Page } from '../login3/login3';
 /**
  * Generated class for the NotificationsPage page.
  *
@@ -22,4 +22,7 @@ export class NotificationsPage {
     console.log('ionViewDidLoad NotificationsPage');
   }
 
+  accept(){
+  	this.navCtrl.push(Login3Page)
+  }
 }

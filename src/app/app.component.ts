@@ -12,6 +12,8 @@ import { MapPage } from '../pages/map/map';
 import { NewpostPage } from '../pages/newpost/newpost';
 import { SlidesPage } from '../pages/slides/slides';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { Login2Page } from '../pages/login2/login2';
+import { Login3Page } from '../pages/login3/login3';
 
 @Component({
   templateUrl: 'app.html'
@@ -36,7 +38,9 @@ export class MyApp {
       { title: 'Map', component: MapPage},
       { title: 'Slides', component: SlidesPage},
       { title: 'Newpost', component: NewpostPage},
-      { title: 'Notifications', component: NotificationsPage}
+      { title: 'Notifications', component: NotificationsPage},
+      { title: 'Login2', component: Login2Page},
+      { title: 'Login3', component: Login3Page}
     ];
 
   }
